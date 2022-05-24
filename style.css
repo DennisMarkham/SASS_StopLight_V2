@@ -1,0 +1,75 @@
+/* I could  definitely use SASS to dry this up */
+@keyframes turnGreen {
+  10% {
+    background-color: #40bf6a;
+  }
+  90% {
+    background-color: #40bf6a;
+  }
+  100% {
+    background-color: #267340;
+  }
+}
+@keyframes turnYellow {
+  10% {
+    background-color: #bfaa40;
+  }
+  90% {
+    background-color: #bfaa40;
+  }
+  100% {
+    background-color: #736626;
+  }
+}
+@keyframes turnRed {
+  10% {
+    background-color: #bf4040;
+  }
+  90% {
+    background-color: #bf4040;
+  }
+  100% {
+    background-color: #732626;
+  }
+}
+#stopLight {
+  width: 140;
+  background-color: #998833;
+}
+
+#green {
+  background-color: #267340;
+  border-top: 5px solid;
+  width: 100;
+  height: 100;
+  border-radius: 50%;
+  margin: 50px 20px;
+  animation-name: turnGreen;
+  animation-duration: 10s;
+}
+
+#yellow {
+  background-color: #736626;
+  border-top: 5px solid;
+  width: 100;
+  height: 100;
+  border-radius: 50%;
+  margin: 50px 20px;
+  animation-name: turnYellow;
+  animation-duration: 5s;
+  animation-delay: 10s;
+}
+
+#red {
+  background-color: #732626;
+  border-top: 5px solid;
+  width: 100;
+  height: 100;
+  border-radius: 50%;
+  margin: 50px 20px;
+  animation-name: turnRed;
+  animation-duration: 10s;
+  animation-delay: 15s;
+}
+
+/*# sourceMappingURL=style.css.map */

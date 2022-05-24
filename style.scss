@@ -2,14 +2,7 @@
 
 
 /* I could  definitely use SASS to dry this up */
-#green
-{
-  background-color: hsl(140, 50%, 30%);
-  border-top: 5px solid;
-  animation-name: turnGreen;
-  animation-duration: 10s;
 
-}
 
 @keyframes turnGreen {
   10% {background-color: hsl(140, 50%, 50%)}
@@ -29,36 +22,38 @@
   100% {background-color: hsl(0, 50%, 30%)}
 }
 
-#stopLight
-{
-  /* make the width some kind of variable*/
-  width: 140px;
-  background-color: hsl(50, 50%, 40%);
-}
+ 
 
+$lightWH: 100;
 
 
 @mixin light($hue) {
   background-color: hsl($hue, 50%, 30%);
   border-top: 5px solid;
-  width: 100px;
-  height: 100px;
+  width: $lightWH;
+  height: $lightWH;
   border-radius: 50%;
   margin: 50px 20px;
 }
 
+#stopLight
+{
+
+  width: $lightWH * 1.4;
+  background-color: hsl(50, 50%, 40%);
+}
 
 
 #green
 {
-@include light(140)
+@include light(140);
 animation-name: turnGreen;
 animation-duration: 10s;
 }
 
 #yellow
 {
-@include light(50)
+@include light(50);
 animation-name: turnYellow;
 animation-duration: 5s;
 animation-delay: 10s;
@@ -71,4 +66,3 @@ animation-name: turnRed;
 animation-duration: 10s;
 animation-delay: 15s;
 }
-*/
