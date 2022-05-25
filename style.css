@@ -35,6 +35,8 @@
 #stopLight {
   width: 140;
   background-color: #998833;
+  padding-top: 20;
+  padding-bottom: 20;
 }
 
 #green {

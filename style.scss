@@ -41,6 +41,8 @@ $lightWH: 100;
 
   width: $lightWH * 1.4;
   background-color: hsl(50, 50%, 40%);
+  padding-top: $lightWH / 5;
+  padding-bottom: $lightWH / 5;
 }
 
 
@@ -49,6 +51,7 @@ $lightWH: 100;
 @include light(140);
 animation-name: turnGreen;
 animation-duration: 10s;
+
 }
 
 #yellow
