@@ -1,0 +1,112 @@
+#stopLight {
+  background-color: #998833;
+  width: 140;
+  padding-top: 20;
+  padding-bottom: 20;
+}
+
+#green {
+  background-color: #267340;
+  border-top: 5px solid;
+  width: 100;
+  height: 100;
+  border-radius: 50%;
+  margin: 50 20;
+  animation-name: turnGreen;
+  animation-duration: 10s;
+}
+
+#yellow {
+  background-color: #736626;
+  border-top: 5px solid;
+  width: 100;
+  height: 100;
+  border-radius: 50%;
+  margin: 50 20;
+  animation-name: turnGreen;
+  animation-duration: 5s;
+  animation-delay: 10s;
+}
+
+#red {
+  background-color: #732626;
+  border-top: 5px solid;
+  width: 100;
+  height: 100;
+  border-radius: 50%;
+  margin: 50 20;
+  animation-name: turnGreen;
+  animation-duration: 10s;
+  animation-delay: 15s;
+}
+
+@media only screen and (max-height: 400px) {
+  #green {
+    background-color: #267340;
+    border-top: 5px solid;
+    width: 50;
+    height: 50;
+    border-radius: 50%;
+    margin: 25 10;
+  }
+
+  #yellow {
+    background-color: #736626;
+    border-top: 5px solid;
+    width: 50;
+    height: 50;
+    border-radius: 50%;
+    margin: 25 10;
+  }
+
+  #red {
+    background-color: #732626;
+    border-top: 5px solid;
+    width: 50;
+    height: 50;
+    border-radius: 50%;
+    margin: 25 10;
+  }
+
+  #stopLight {
+    background-color: #998833;
+    width: 70;
+    padding-top: 10;
+    padding-bottom: 10;
+  }
+}
+@keyframes turnGreen {
+  10% {
+    background-color: #40bf6a;
+  }
+  90% {
+    background-color: #40bf6a;
+  }
+  100% {
+    background-color: #267340;
+  }
+}
+@keyframes turnYellow {
+  10% {
+    background-color: #bfaa40;
+  }
+  90% {
+    background-color: #bfaa40;
+  }
+  100% {
+    background-color: #736626;
+  }
+}
+@keyframes turnRed {
+  10% {
+    background-color: #bf4040;
+  }
+  90% {
+    background-color: #bf4040;
+  }
+  100% {
+    background-color: #732626;
+  }
+}
+
+/*# sourceMappingURL=rst.css.map */

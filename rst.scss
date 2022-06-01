@@ -1,0 +1,83 @@
+@mixin stopLight($width) {
+  background-color: hsl(50, 50%, 40%);
+  width: $width;
+  padding-top: $width/7;
+  padding-bottom: $width/7;
+}
+
+
+
+@mixin light($hue, $lightWH) {
+  background-color: hsl($hue, 50%, 30%);
+  border-top: 5px solid; 
+  width: $lightWH;
+  height: $lightWH;
+  border-radius: 50%;
+  margin: ($lightWH/2) ($lightWH/5);
+  }
+
+  #stopLight
+  {
+  @include stopLight(140);
+  }
+
+#green {
+  @include light(140, 100);
+  animation-name: turnGreen;
+animation-duration: 10s;}
+
+#yellow {
+  @include light(50, 100);
+  animation-name: turnGreen;
+animation-duration: 5s;
+animation-delay: 10s
+  }
+
+ #red {
+ @include light(0, 100);
+ animation-name: turnGreen;
+animation-duration: 10s;
+animation-delay: 15s;
+ }
+
+ @media only screen and (max-height: 400px)
+ {
+#green {
+  @include light(140, 50);
+}
+#yellow {
+  @include light(50, 50);
+}
+
+#red {
+  @include light(0, 50);
+}
+
+#stopLight
+{
+@include stopLight(70);
+ }
+
+ }
+
+
+
+@keyframes turnGreen {
+  10% {background-color: hsl(140, 50%, 50%)}
+  90% {background-color: hsl(140, 50%, 50%)}
+  100% {background-color: hsl(140, 50%, 30%)}
+}
+
+@keyframes turnYellow {
+  10% {background-color: hsl(50, 50%, 50%)}
+  90% {background-color: hsl(50, 50%, 50%)}
+  100% {background-color: hsl(50, 50%, 30%)}
+}
+
+@keyframes turnRed {
+  10% {background-color: hsl(0, 50%, 50%)}
+  90% {background-color: hsl(0, 50%, 50%)}
+  100% {background-color: hsl(0, 50%, 30%)}
+}
+
+
